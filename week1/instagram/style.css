@@ -1,94 +1,40 @@
-.phones img{
-    height: 600px;
-    margin: 100px 0px 0px 400px;
-    float: left;
-}
-.phones {  
-      margin: 0px 0px 0px 0px;
-}
 body {
-    background-color: rgb(250,250,250);
-    overflow: scroll;
+    background-image: url(home.jpg);
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    margin-left: 800px;
+    height: 200px;
+    width: 300px;
+    background-color: white;
 }
-.insicon{
-    position: relative;
-    width: 320px;
+img{
     height: 60px;
+    width: 200px;
 }
-h3{
-    font-size: 20px;
-    color: #999;
-}
-.registration{
-    border: 1px solid rgb(245,245,245);
-    height: 616px;
-    width: 320px;
-    float: right;
-    margin: 50px 340px 0px 0px;
+
+
+section {
+    position: static;
+    background-color: white;
+    padding: 10px;
     text-align: center;
-    background-color: #FFFFFF;
+    border: 1px solid gray;
 }
-.registration p{
-    font-size: 16px;
-    color: #999;
-    padding: 0px 45px;
+.main-box #fB {
+    font-size: 90%;
+    height: 40px;
+    width: 250px;
+    background: rgb(7, 48, 73);
+    border-radius: 7px;
 }
-.registration button{
-    width: 268px;
-    height: 31.2px;
-    background-color: #4697F2;
-    border-radius: 5px;
-    cursor: pointer;
-    line-height: 18px;
-    margin-top: 5px;
+.main-box #signUpBut {
+    font-size: 90%;
+    height: 40px;
+    width: 250px;
+    background: rgb(7, 48, 73);
+    border-radius: 7px;
 }
-#registrate img{
-    width: 16px;
-    height: 16px;
-    padding-right: 10px;
-}
-#firstline{
-    width: 90px;
-    float: left;
-    margin: 10px 0px 0px 40px;
-    background-color: #efefef;
-}
-#secondline{
-    width: 90px;
-    float: right;
-    margin: 10px 50px 0px 0px;
-    background-color: #efefef;
-}
-.registration or{
-    float: left;
-    font-size: 18px;
-    
-}
-.data input{
-    width: 256px;
-    height: 36px;
-    margin: 5px 3px;
-    border-radius: 3px;
-    background-color: #efefef;
-    padding-left: 8px;
-}
-.ssylki{
-    color: #999;
-    font-weight: 600;
-    text-decoration: none;
-}
-.vhod{
-    width: 320px;
-    height: 50px;
-    border: 1px solid black;
-    float: right;
-    margin-top: 10px;
-    margin-right: 340px;
-    margin-bottom: 0px;
-    text-align: center;
-}
-.ustanovit {
-    float: right;
-    margin-top: 100px;
-    margin-left: 500px;
-}
+
+

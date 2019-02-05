@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <title>Instagram</title>
-        <link rel="shortcut icon" href="images/3.png" type="image/x-icon">
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        <div class="phones">
-            <img src="images/4.png" alt="Iphone and Samsung">
-        </div>
-
-        <form action="registration" class="registration">
-            <a><img class="insicon" src="images/insicon.jpg"></a>
-            <h3>Зарегистрируйтесь, чтобы смотреть фото и видео ваших друзей.</h3>
-            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv1.0%2Fdialog%2Foauth%3Fredirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522xv2yzq10ee2i3197u2y011shvsbap6asp3q31vd16dfebw1mwxgxo%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26client_id%3D124024574287414%26ret%3Dlogin%26logger_id%3Dcb961972-9dca-dde2-fe0a-0b3db0779f22&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522xv2yzq10ee2i3197u2y011shvsbap6asp3q31vd16dfebw1mwxgxo%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%23_%3D_&display=page&locale=ru_RU&logger_id=cb961972-9dca-dde2-fe0a-0b3db0779f22"><button id="registrate" type="button">
-                <img src="images/5.jpg">Войти через Facebook</button>
-            </a>
-            <br>
-            <br>
-            <div class="line">
-                <hr id="firstline"><a class="or">ИЛИ</a><hr id="secondline">
-            </div>
-            <br>
-            <div class="data">
-                <input type="number" placeholder="Моб. телефон или эл. адрес" required>
-                <input type="text" placeholder="Имя и фамилия" required>
-                <input type="text" placeholder="Имя пользователя" required>
-                <input type="password" placeholder="Пароль" required>
-            </div>
-            <button type="button">Регистрация</button>
-            <br>
-            <p>Регистрируясь, вы принимаете наши <a class="ssylki" target="_blank" href="https://help.instagram.com/581066165581870">Условия</a>, 
-                <a class="ssylki" target="_blank" href="https://help.instagram.com/519522125107875">Политику использования данных</a> и <a class="ssylki" target="_blank" href="https://help.instagram.com/1896641480634370?ref=ig">Политику в отношении файлов cookie.</a>
-            </p>
-        </form>
-        <form>
-            <div class="vhod">                
-                <p>Есть аккаунт? <a href="https://www.instagram.com/accounts/login/?source=auth_switcher">Вход</a></p>
-            </div>
-            <div class="ustanovit">
-                <p>
-                    Установите приложение.
-                </p>
-            </div>
-        </form>
+       
+        <main>
+            <section class="main-box" id="signUp">
+                <img src="./logo.jpg" alt="fdgfd">
+                <h4 style="font-family:Arial, Helvetica, sans-serif; color:gainsboro">Sign up to see photos and videos from your friends.</h4>
+                <button id="fB" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Log in with Facebook</button>
+                <h5>OR</h5>
+                <input type="text" class="text-line" placeholder="Mobile Number or Email">
+                <input type="text" class="text-line" placeholder="Full Name">
+                <input type="text" class="text-line" placeholder="Username">
+                <input type="text" class="text-line" placeholder="Password">
+                <button id="signUpBut" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Sign up</button>
+                <h5 style="font-family:Arial, Helvetica, sans-serif; color:gainsboro; font-size: 10px;">By signing up, you agree to our Terms , Data Policy and Cookies Policy .</h5>
+            </section>
+            <section id="login" class="mini-box">
+                <h5>Have an account? <a href="https://www.instagram.com/accounts/login/?source=auth_switcher">Log in</a> </h5>
+            </section>
+            <section>
+                <h5>Get the app.</h5>
+            </section>
+                
+        </main>
+        <footer>
+            
+        </footer>
     </body>
 </html>
