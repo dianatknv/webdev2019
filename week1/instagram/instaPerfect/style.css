@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+.leftSide{
+    float: left;
+    margin-left: 310px;
+    margin-top: 120px;
+}
+
+.granica1{
+        margin-top:50px;
+        margin-left: 720px;
+        margin-right:200px;
+        background-color:rgb(255, 255, 255);
+        text-align: center;
+        border: 1px solid rgb(230, 230, 230);
+        width: 352px;
+        height: 650px;
+}
+
+.granica2{
+    border: 1px solid rgb(230, 230, 230);
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    line-height: 22px;
+    width: 352px;
+    margin-left: 720px;
+    margin-top: 10px;
+    height: 70px;
+    font-size: 15px;
+}
+
+.granica3{
+    width: 352px;
+    margin-left: 720px;
+    margin-top: 10px;
+    height: 70px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.rightSide img{
+    width: 350px;
+}
+
+#insta{
+    margin-left: -70px;
+}
+.input{
+        margin: 2px;
+        border: 1px solid rgb(239, 239, 239);
+        font-size: 12px;
+        color:rgb(153, 153, 153);
+        font-family: "Arial";
+        text-align: left;
+        height: 40px;
+        width: 270px;
+        border-radius: 5px;
+}
+
+.info{
+    width: 352px;
+    height: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    color:rgb(153, 153, 153);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.fbLogIn{
+        font-weight: bold;
+        height: 35px;
+        width: 270px;
+        font-size: 14px;
+        background-color: #3897F0;
+        color: #FBFDFF;
+        border-radius: 5px;
+        border:1px solid white; 
+}
+
+h4{
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 0;
+}
+
+.instruction{ 
+    color:rgb(153, 153, 153);
+    font-size: 15px;
+    width: 352px;;
+    height: 50px;
+}
+
+.appImg{
+    margin-left: 720px;
+    margin-bottom: 10px;
+}
+
+.appImg img{
+
+    width : 173px; 
+}

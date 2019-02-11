@@ -1,6 +1,5 @@
 body {
     background-image: url(home.jpg);
-    background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
     background-size: 80%;
@@ -12,6 +11,7 @@ body {
 img{
     height: 60px;
     width: 200px;
+    position: static;
 }
 
 
