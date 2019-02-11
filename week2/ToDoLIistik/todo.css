@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#todo1{
+    padding-left: 100px;
+    color:#bbb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+
+}
+.head{
+    background-color: rgb(34, 34, 34);
+    height: 60px;
+}
+
+#todo2{
+    padding-left:400px;
+    padding-top:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#444;
+    font-weight: normal;
+}
+#text{
+    position: absolute;;
+    left:500px;
+    top:180px;
+    width: 700px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 14px;
+}
+::-webkit-input-placeholder{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rubbish{
+    width:40px;
+    height: 40px;
+    position: absolute;
+    left: 950px;
+    bottom: 4px;
+}
+
+input::placeholder{
+    font-size: 14px;
+}
+#btn{
+    position:absolute;
+    top: 180px;
+    left:1220px;
+    width: 90px;
+    height: 40px;
+    background-color:  rgba(15, 101, 199, 0.801);
+    border:1px solid rgba(11, 121, 247, 0.801);
+    border-radius: 2px;
+    color:#fff;
+    font-size: 16px;
+}
+
+.tasks{
+    border: 1px solid #999;
+    position: relative;
+    top: 150px;
+    padding:12px 8px 12px 40px;
+    margin-right: 350px;    
+    margin-left: 350px;
+
+}
+
+.taskText{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.check:checked{
+    text-decoration: line-through;
+}
