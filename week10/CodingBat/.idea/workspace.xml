@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6ae3d9c-3ab0-4542-b0ff-57335e498858" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/List-1/commonEnd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/List-1/firstLast6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/List-1/reverse3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/List-2/countEvens.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/List-2/sum13.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic-1/caughtSpeeding.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic-1/cigarParty.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic-1/love6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic-2/makeBricks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic-2/makeChocolate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic-2/noTeenSum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/String-1/firstHalf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/String-1/helloName.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/String-1/makeOutWord.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/String-2/countCode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/String-2/countHi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/String-2/doubleChar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/diff21.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/front3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/frontBack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/makes10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/missingChar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/monkeyTrouble.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/nearHundred.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/notString.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/parrotTrouble.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/posNeg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/sleepIn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-1/sumDouble.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-2/arrayFront9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-2/stringSplosion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WarmUp-2/stringTimes.py" afterDir="false" />
-    </list>
+    <list default="true" id="d6ae3d9c-3ab0-4542-b0ff-57335e498858" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +93,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/List-2/bigDiff.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -222,6 +193,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
@@ -251,7 +223,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
@@ -498,7 +469,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/List-2/bigDiff.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

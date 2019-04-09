@@ -1,0 +1,14 @@
+
+<h1>Task Lists<img src="https://apprecs.org/gp/images/app-icons/300/8a/io.tinbits.memorigi.jpg" width=80px></h1>
+
+<div class="lists" >
+  <div  *ngFor="let t of taskLists" (click)="getTasks(t)" ><li>{{t.name}}</li></div>
+</div>
+<div class="tasks">
+  <ng-container *ngIf="!loading">
+    <p>NO TASKS IN THIS TASK LIST</p>
+  </ng-container>
+  <ng-container *ngIf="loading">
+    <div *ngFor="let t of tasks"><li><p>{{t.name}}</p><p>~{{t.status}}~</p><p>Created at: {{t.created_at}}</p><p>Due on: {{t.due_on}}</p></li></div>
+</ng-container>
+</div>
