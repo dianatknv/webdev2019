@@ -1,0 +1,61 @@
+<ng-container *ngIf="!logged">
+  <div class="authorization">
+    <div><input type="text" [(ngModel)]="username"></div>
+    <div><input type="password" [(ngModel)]="password"></div>
+    <div><button (click)="auth()">Log in</button></div>
+  </div>
+</ng-container>
+<ng-container *ngIf="logged">
+<div class="wrapper">
+  <div class="header">
+    <h1 style="color:mistyrose">My ToDo List</h1>
+    <h2 style="color:mistyrose">Getting Things Done</h2>
+  </div>
+
+  <div class="butIn">
+    <div class="cInput">
+      <input placeholder="New task list..." type="text" [(ngModel)]="name"/>
+    </div>
+    <div class="cBut">
+      <button style="background-color: mistyrose; font-family: Arial" (click)="createTaskList()">Create</button>
+    </div>
+  </div>
+
+  <div class="tasklist"id="tasks" >
+    <div *ngFor="let t of tasksList" (click)="getTaskFromList(t)">
+      <span style="color: white">| ID | </span>{{t.id}}
+      <span style="color: white">| Name | </span> <input style="background-color: inherit; border: 0;" type="text" id="name" [(ngModel)]="t.name"/>
+      <span style="color: deeppink" (click)="deleteTaskList(t)">| Delete </span>
+      <span style="color: deeppink" (click)="updateTaskList(t)">| Modify |</span>
+    </div>
+  </div>
+
+  <div class="ListOfChosenTasks">
+    <div *ngFor="let t of tasks">
+      <span style="color: deeppink;"> ID | </span>	{{t.id}} <span style="color: deeppink;">|</span>
+      <span style="color: deeppink;"> Name | </span>	{{t.name}} <span style="color: deeppink;">|</span>
+      <span style="color: deeppink;"> Created at | </span> {{t.created_at}} <span style="color: deeppink;">|</span>
+      <span style="color: deeppink;"> Due on |</span>	{{t.due_on}} <span style="color: deeppink;">|</span>
+      <span style="color: deeppink;"> Status |</span>	{{t.status}}
+    </div>
+
+
+    <div class="InputList" >
+      <div class="ListOfChosenTasks2">
+        <input style="margin-top: 20px" placeholder="New task list id..." type="text" [(ngModel)]="id"/>
+      </div>
+      <div class="ListOfChosenTasks2" >
+        <input placeholder="New task name..." type="text" [(ngModel)]="tname"/>
+      </div>
+      <div class="ListOfChosenTasks2">
+        <input placeholder="New task status..." type="text" [(ngModel)]="status"/>
+      </div>
+      <div class="ListOfChosenTasks2">
+        <button id="crtask" class="crtask" style="background-color: mistyrose; font-family: Arial; height: 30px; width: 130px; margin-top: 10px"
+                (click)="createTask()">Create new task</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <div><button (click)="logout()">Log out</button></div>
+</ng-container>

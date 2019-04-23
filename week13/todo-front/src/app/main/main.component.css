@@ -1,0 +1,66 @@
+.wrapper{
+  text-align: center;
+  margin: 0 auto;
+}
+.header{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #8b41d1ec;
+}
+
+.tasklist{
+  background-color: rgba(137, 43, 226, 0.294);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.ListOfChosenTasks{
+  background-color: rgba(137, 43, 226, 0.082);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+
+
+.cInput{
+  margin-left: 10px;
+  width: 150px;
+  display:inline-block;
+}
+
+.cBut{
+  margin-left: 50px;
+  width: 100px;
+  display:inline-block;
+}
+
+button{
+  font-size: 15px;
+  width: 90px;
+  height: 30px;
+}
+
+.ListOfChosenTasks2 div{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.InputList input{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display:inline-block;
+}
+
+input{
+  font-size: 15px;
+  width: 180px;
+  padding-right: 10px;
+  height: 26px;
+}
+
+.butIn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 30px;
+  display:inline-block;
+}
