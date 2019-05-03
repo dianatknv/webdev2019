@@ -1,22 +1,20 @@
-from django.shortcuts import render
 import json
 from django.http import HttpResponse, JsonResponse
 from api import models
 from api.models import Task, TaskList
-from api.serializers import Task, TaskSerializer
+from api.serializers import TaskListSerializer, TaskSerializer
 from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
-
 
 @csrf_exempt
 def task_lists(request):
     if request.method == 'GET':
         t_lists = TaskList.objects.all()
-        serializer = Task(t_lists, many=True)
+        serializer = TaskListSerializer(t_lists, many=True)
         return JsonResponse(serializer.data, safe=False)
     elif request.method == 'POST':
         t_list = json.loads(request.body)
-        serializer = Task(data=t_list)
+        serializer = TaskListSerializer(data=t_list)
         if serializer.is_valid():
             serializer.save()
             return JsonResponse(serializer.data)
@@ -31,11 +29,11 @@ def task_list(request, pk):
         return JsonResponse({'error': str(e)}, safe=False)
 
     if request.method == 'GET':
-        serializer = Task(t_list)
+        serializer = TaskListSerializer(t_list)
         return JsonResponse(serializer.data, safe=False)
     elif request.method == 'PUT':
         data = json.loads(request.body)
-        serializer = Task(instance=t_list, data=data)
+        serializer = TaskListSerializer(instance=t_list, data=data)
         if serializer.is_valid():
             serializer.save()
         return JsonResponse(serializer.errors)
@@ -63,7 +61,6 @@ def task_lists_tasks(request, pk):
             serializer.save(task_list=taskList)
             return JsonResponse(serializer.data, safe=False)
         return JsonResponse(serializer.errors)
-
 
 
 @csrf_exempt
