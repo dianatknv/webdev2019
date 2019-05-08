@@ -2,6 +2,7 @@ import { EventEmitter, Injectable } from '@angular/core';
 import {TaskList, Task, Token} from '../models/models';
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {MainService} from './main.service';
+import * as moment from 'moment';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,11 +11,23 @@ export class ProviderService extends MainService {
     super(http);
   }
 
-  getTaskLists(): Promise<TaskList[]> {
-    return this.get('http://127.0.0.1:8000/api/task_lists/',  {});
+  formatDate(date: Date) {
+    return moment(date).format('YYYY-MM-DD');
   }
-  getTasks(id: number) {
-    return this.get(`http://localhost:8000/api/task_lists/${id}/tasks/`, {});
+
+  getTaskLists(sorting = '', search = ''): Promise<TaskList[]> {
+    if ( sorting === '') {
+      return this.get('http://127.0.0.1:8000/api/task_lists/?' + 'search=' + search,  {});
+    } else {
+      return this.get('http://127.0.0.1:8000/api/task_lists/?' + sorting + '&search=' + search,  {});
+    }
+  }
+  getTasks(id: number, sortBy = '', search = '', filterexp = '') {
+    if ( sortBy === '') {
+      return this.get(`http://localhost:8000/api/task_lists/${id}/tasks/?` + 'search=' + search + '&' + filterexp, {});
+    } else {
+      return this.get(`http://localhost:8000/api/task_lists/${id}/tasks/?` + 'ordering=' + sortBy + '&search='  + search  + '&' + filterexp, {});
+    }
   }
   createTaskList(namE: string): Promise<TaskList> {
     return this.post('http://localhost:8000/api/task_lists/', {name: namE});
@@ -37,23 +50,23 @@ export class ProviderService extends MainService {
     });
   }
 
-  /*createTask(task: Task) {
+  createTask(namE: string, statuS: string, createdAt, dueOn, taskList: TaskList) {
       return this.post('http://localhost:8000/api/task_lists/' + taskList.id + '/tasks/', {
-        name: task.name,
-        task_list: task.task_list,
-        status: task.status,
-        created_at: task.created_at,
-        due_on: task.due_on
+        name: namE,
+        status: statuS,
+        created_at: this.formatDate(createdAt) + 'T' + '00:00:00',
+        due_on: this.formatDate(dueOn) + 'T' + '00:00:00'
       });
-  }*/
-  deleteTask(task: Task) {
-    return this.delet('http://localhost:8000/api/task_lists/' + task.task_list.id + '/tasks/' + task.id + '/', {});
   }
 
-  auth(username: string, password: string): Promise<Token> {
+  deleteTask(task: Task) {
+    return this.delet('http://localhost:8000/api/task_lists/' + task.task_list.id + '/tasks/' + task.id, {});
+  }
+
+  auth(usernamE: string, passworD: string): Promise<Token> {
       return this.post('http://localhost:8000/api/login/', {
-        username: username,
-        password: password
+        username: usernamE,
+        password: passworD
       });
   }
 
